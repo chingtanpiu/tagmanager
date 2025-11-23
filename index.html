@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签组合筛选系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>标签组合筛选系统</h1>
+        </header>
+        
+        <main>
+            <section class="sidebar">
+                <h2>标签分类</h2>
+                <div id="tag-tree"></div>
+                <button id="add-category-btn">添加大类</button>
+            </section>
+            
+            <section class="content">
+                <h2>条目列表</h2>
+                <div id="items-container"></div>
+                <button id="add-item-btn">添加条目</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy;标签组合筛选系统</p>
+        </footer>
+    </div>
+
+    <!-- 右键菜单 -->
+    <div id="context-menu" class="context-menu" style="display: none;">
+        <div class="menu-item" id="delete-selected">删除选中</div>
+        <div class="menu-item" id="move-to-category">移动到</div>
+    </div>
+
+    <!-- 移动到搜索框 -->
+    <div id="move-search-container" class="move-search-container" style="display: none;">
+        <input type="text" id="move-search-input" placeholder="搜索类别..." autocomplete="off">
+        <div id="move-search-results"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 标签组合筛选系统
 
 一个基于Python和原生JavaScript的标签管理系统，支持多层级标签分类、条目管理、文件上传和组合筛选功能。
@@ -186,3 +187,6 @@ dsds/
 ## 许可证
 
 MIT License - 详见LICENSE文件
+=======
+# tagmanager
+>>>>>>> acc48526322dcf6ab2756fdda1b3671f025579b7
